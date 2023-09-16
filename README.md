@@ -1,5 +1,6 @@
 Answer:
 1. 3 Project features:
+
             ->1.When i click select button course name and total credit hour added in cart and reamaining hour also added
 
             ->2.One course added only one time in cart
@@ -8,7 +9,8 @@ Answer:
 
             ->4.we cannot added course when total credit hour is greater than 20
 
-2.how i managed the state in my assignment project:
-  first i declare a variable and function and in useState i give a initial value that seat in variable and we using function for create a new variable.
+2.How i managed the state in my assignment project:
+  
+  ->First i declare a variable and function and in useState i give a initial value that seat in variable and we using function for create a new variable.
 
 
