@@ -1,4 +1,4 @@
-const Card = ({course}) => {
+const Card = ({course, handleAddToCarts}) => {
     const {img, course_name, credit_hours, price, details} = course
     return (
         <div>
@@ -20,7 +20,7 @@ const Card = ({course}) => {
                 </div>
                 
                 <div className="w-full px-4">
-                        <button className="btn btn-primary bg-blue-500 w-full text-white border-white text">Select</button>
+                        <button onClick={() =>handleAddToCarts(course)} className="btn btn-primary bg-blue-500 w-full text-white border-white text">Select</button>
                     </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 [
       {
+        "id": 1,
         "img": "https://i.ibb.co/7gqxnGd/Rectangle-2-2.png",
         "course_name": "Introduction to Programming",
         "credit_hours": 6,
@@ -7,6 +8,7 @@
         "details": "Learn the fundamentals of programming in this introductory course."
       },
       {
+        "id": 2,
         "img": "https://i.ibb.co/hVbTq6c/Rectangle-2-1.png",
         "course_name": "Web Development Basics",
         "credit_hours": 4,
@@ -14,6 +16,7 @@
         "details": "Explore the essentials of web development, including HTML, CSS, and JavaScript."
       },
       {
+        "id": 3,
         "img": "https://i.ibb.co/XtS09yM/Rectangle-2-5.png",
         "course_name": "Data Science Fundamentals",
         "credit_hours": 7,
@@ -21,6 +24,7 @@
         "details": "Discover the basics of data science, data analysis, and visualization."
       },
       {
+        "id": 4,
         "img": "https://i.ibb.co/4Z125wM/Rectangle-3-1.png",
         "course_name": "Digital Marketing 101",
         "credit_hours": 3,
@@ -28,6 +32,7 @@
         "details": "Get started with digital marketing and social media advertising techniques."
       },
       {
+        "id": 5,
         "img": "https://i.ibb.co/jH2M9Tc/Rectangle-2-4.png",
         "course_name": "Machine Learning for Beginners",
         "credit_hours": 6,
@@ -35,6 +40,7 @@
         "details": "An introductory course to machine learning algorithms and concepts."
       },
       {
+        "id": 6,
         "img": "https://i.ibb.co/0XW0fbM/Rectangle-2-6.png",
         "course_name": "Graphic Design Essentials",
         "credit_hours": 4,
@@ -42,6 +48,7 @@
         "details": "Learn the basics of graphic design, including Adobe Photoshop and Illustrator."
       },
       {
+        "id": 7,
         "img": "https://i.ibb.co/Cvvr2CS/Rectangle-3.png",
         "course_name": "Financial Planning and Investment",
         "credit_hours": 5,
@@ -49,6 +56,7 @@
         "details": "Understand financial planning, budgeting, and investment strategies."
       },
       {
+        "id": 8,
         "img": "https://i.ibb.co/Y7S3NFS/Rectangle-2-3.png",
         "course_name": "Artificial Intelligence Applications",
         "credit_hours": 5,
@@ -56,6 +64,7 @@
         "details": "Explore real-world applications of artificial intelligence and machine learning."
       },
       {
+        "id": 9,
         "img": "https://i.ibb.co/7vZz4Xj/Rectangle-2.png",
         "course_name": "Creative Writing Workshop",
         "credit_hours": 2,
