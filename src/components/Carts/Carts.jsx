@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Carts = ({carts, totalCredit, remainingCredit}) => {
     return (
         <div className="w-full h-auto bg-base-100 shadow-xl rounded-lg">
@@ -7,7 +9,7 @@ const Carts = ({carts, totalCredit, remainingCredit}) => {
             <h1 className="px-4 py-1 text-xl font-bold">Course Name</h1>
             <div className="px-4 py-4">
                 {
-                    carts.map((course) => <ol>{course.course_name}</ol>)
+                    carts.map((course, idx) => <ol key={idx}>{course.course_name}</ol>)
                 }
             </div>
             <div className="px-4 py-4 border-t-2">
@@ -16,6 +18,11 @@ const Carts = ({carts, totalCredit, remainingCredit}) => {
         </div>
     );
 };
-// Carts.propTypes
+
+Carts.propTypes = {
+    carts: PropTypes.array,
+    totalCredit: PropTypes.number,
+    remainingCredit: PropTypes.number
+}
 
 export default Carts;

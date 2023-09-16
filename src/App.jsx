@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Cards from './components/Cards/Cards'
 import Carts from './components/Carts/Carts'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -11,12 +13,11 @@ function App() {
   const total = 20;
 
   const handleAddToCarts = course =>{
-
     const isExist = carts.find((courseName) => courseName.id == course.id);
     let temp = course?.credit_hours;
 
     if(isExist){
-      return alert("already exsist")
+      return toast('Already added this course');
     }
     else{
       carts.forEach((item) => {
@@ -24,8 +25,9 @@ function App() {
       });
       const sum = total - temp;
       if (temp > 20) {
-        return alert("bhai  taka sesh");
-      } else {
+        return toast('You can added total credit hour 20')
+      } 
+      else {
       const newCarts = [...carts, course];
       setCarts(newCarts)
       setTotalCredit(temp);
@@ -49,6 +51,7 @@ function App() {
             totalCredit ={totalCredit}
             remainingCredit ={remainingCredit}
             ></Carts>
+            <ToastContainer />
           </div>
         </div>
       </div>

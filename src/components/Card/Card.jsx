@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Card = ({course, handleAddToCarts}) => {
     const {img, course_name, credit_hours, price, details} = course
     return (
@@ -26,5 +28,10 @@ const Card = ({course, handleAddToCarts}) => {
         </div>
     );
 };
+
+Card.propTypes ={
+    course: PropTypes.array,
+    handleAddToCarts: PropTypes.array
+}
 
 export default Card;

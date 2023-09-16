@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Card from "../Card/Card";
+import PropTypes from 'prop-types';
 
 const Cards = ({handleAddToCarts}) => {
 
@@ -20,5 +21,8 @@ const Cards = ({handleAddToCarts}) => {
         </div>
     );
 };
+Cards.propTypes ={
+    handleAddToCarts: PropTypes.array
+}
 
 export default Cards;
