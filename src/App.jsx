@@ -6,17 +6,31 @@ import Carts from './components/Carts/Carts'
 function App() {
 
   const [carts, setCarts] = useState([])
+  const [totalCredit, setTotalCredit] = useState(0)
+  const [remainingCredit, setRemainingCredit] = useState(0)
+  const total = 20;
 
   const handleAddToCarts = course =>{
 
     const isExist = carts.find((courseName) => courseName.id == course.id);
+    let temp = course?.credit_hours;
 
     if(isExist){
       return alert("already exsist")
     }
     else{
+      carts.forEach((item) => {
+        temp += item.credit_hours;
+      });
+      const sum = total - temp;
+      if (temp > 20) {
+        return alert("bhai  taka sesh");
+      } else {
       const newCarts = [...carts, course];
       setCarts(newCarts)
+      setTotalCredit(temp);
+      setRemainingCredit(sum);
+      }
     }
 
   }
@@ -30,7 +44,11 @@ function App() {
               <Cards handleAddToCarts={handleAddToCarts}></Cards>
           </div>
           <div className='w-1/3 pr-6'>
-            <Carts carts={carts}></Carts>
+            <Carts 
+            carts={carts}
+            totalCredit ={totalCredit}
+            remainingCredit ={remainingCredit}
+            ></Carts>
           </div>
         </div>
       </div>

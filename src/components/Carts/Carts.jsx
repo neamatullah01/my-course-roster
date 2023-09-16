@@ -1,4 +1,4 @@
-const Carts = ({carts}) => {
+const Carts = ({carts, totalCredit, remainingCredit}) => {
     return (
         <div className="w-full h-auto bg-base-100 shadow-xl rounded-lg">
             <div>
@@ -9,6 +9,9 @@ const Carts = ({carts}) => {
                 {
                     carts.map((course) => <ol>{course.course_name}</ol>)
                 }
+            </div>
+            <div>
+                <p>Total Credit Hours: {totalCredit}</p>
             </div>
         </div>
     );
