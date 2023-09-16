@@ -1,8 +1,14 @@
-# React + Vite
+Answer:
+1. 3 Project features:
+            ->1.When i click select button course name and total credit hour added in cart and reamaining hour also added
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+            ->2.One course added only one time in cart
 
-Currently, two official plugins are available:
+            ->3.if course hour greater than 20 hour toast notification show and when we want to select one course in two time then toast notification also show
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+            ->4.we cannot added course when total credit hour is greater than 20
+
+2.how i managed the state in my assignment project:
+  first i declare a variable and function and in useState i give a initial value that seat in variable and we using function for create a new variable.
+
+
