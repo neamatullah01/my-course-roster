@@ -12,5 +12,6 @@ Answer:
 2.How i managed the state in my assignment project:
   
   ->First i declare a variable and function and in useState i give a initial value that seat in variable and we using function for create a new variable.
+#Live_link-https://plastic-brother.surge.sh
 
 
